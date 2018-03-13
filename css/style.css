@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Sans-serif, Helvetica;
+	color: #424242;
+}
+
+a {	text-decoration: none }
+
+article { width: 95%; margin: auto }
+
+header {
+	background-color: #010202;
+	width: 100%;
+}
+
+header nav {
+	margin: auto;
+	overflow: hidden;
+	width: 95%;
+}
+
+header nav figure {
+	float: left;
+}
+
+header nav figure .logo {
+	margin: 12px 0 0 0;
+	width: 190px;
+}
+
+header nav ul {
+	float: right;
+	margin: 0;
+	padding: 1em 0;
+}
+
+header nav ul li {
+	display: inline-block;
+	list-style: none;
+	padding: 0 .5em;
+	vertical-align:middle;
+}
+
+header nav ul li a {
+	color: #FFF;
+	font-weight: bold;
+}
+
+footer {
+	background-color: #010202;
+	color: #FFF;
+	padding: 2em 0;
+}
+
+footer article {
+	width: 95%;
+}
+.btn-contacto {
+	background-color: #fb6066;
+	border-radius: 5em;
+	cursor: pointer;	
+	padding: .5em 1em;
+}
+
+.btn-contacto:hover {
+	background-color: #0a8ecd;
+	transition: .2s;
+	-webkit-transition: 1s;
+}
+
+.image-play {
+	cursor: pointer;
+	width: 34px;
+	vertical-align:middle;
+}
+/*** SLIDER ***/
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+	max-width: 100%;
+}
+.art-slider {
+	height: 400px;
+	overflow: hidden;
+}
+
+.art-slider h1 {
+	color: #FFF;
+	font-size: 30px;
+	margin-top: 200px;
+}
+/*** COURSES ***/
+.contenido {
+	background-color: #0a8ecd;
+	width: 100%;
+}
+
+.contenido-conocimiento {
+	background: #FFF;
+}
+
+.contenido .art-contenido {
+	margin: auto;
+	padding: 1em 0;
+	width: 80%;
+	overflow: hidden;
+}
+
+.lis-info-pad {
+	padding: 0 0em 0 0;
+}
+
+.hov-color:hover {
+	color: #fb6066;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+
+.contenido .art-contenido .lis-info {
+	display: inline-block;
+	list-style: none;
+	padding: 3em;
+}
+
+.contenido .art-contenido .lis-info .ico {
+	height: 280px;
+	border-radius: .5em;
+	/* Centrar img */
+	display:block;
+	margin:auto;
+}
+
+.contenido .art-contenido .lis-info .ico:hover {
+	border-radius: 2em;
+	-webkit-transition: .5s;
+}
+
+.contenido .art-contenido .lis-info .txt-courses {
+	color: #FFF;
+	font-weight: bold;
+	line-height: 2em;
+	margin: 0 0 0 .5em;
+	padding: 1.5em 0 0 0;
+}
+
+.img-conocimiento {
+	border-radius: .5em 5em .5em 5em;
+	float: left;
+	padding: 1.5em 0;
+	width: 380px;
+}
+
+.img-proyecto {
+	border-radius: 5em .5em 5em .5em;
+}
+
+.div-info {
+	float: left;
+	margin: 3em 4em 0 0;
+	width: 50%;
+}
+
+.tit- {
+	color: #424242;
+	font-size: 50px;
+	margin: .5em 0;
+}
+
+/** Contacto **/
+
+.formulario-contact {
+	width: 100%;
+}
+
+.formulario-contact .art-contact {
+	margin: auto;
+	overflow: hidden;
+	padding: 3.5em 0;
+	width: 90%;
+}
+
+.formulario-contact .art-contact .title-contact {
+	font-size: 33px;
+}
+
+.formulario-contact .art-contact .container-formu {
+	margin: 2em 0;
+	width: 50%;
+}
+
+.formulario-contact .art-contact .container-formu form .cmp-txt {
+    border-radius: .7em;
+    border: 1px solid #9b9b9b;
+	padding: .8em 2em;
+	margin: 1.5em 0;
+    width: 100%;
+}
+
+.formulario-contact .art-contact .container-formu form .txt-area-contact {
+	border-radius: .7em;
+	border: 1px solid #9b9b9b;
+	padding: .8em 2em;
+	margin: 1.5em 0;
+	width: 100%;
+}
+
+.formulario-contact .art-contact .container-formu form .btn-send {
+	background-color: #0268fd;
+    border: 2.5px solid #0268fd;
+    border-radius: 5em;
+    color: #FFF;
+	cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 1em 0 0;
+    padding: .8em 1.5em;
+    width: 100%;
+}
+
+/*** Responsive ***/
+
+@media only screen and (max-width:661px) {
+    /* For mobile phones: */
+    header nav figure {
+		text-align: center;
+		width: 100%;
+	}
+    header nav ul {
+    	text-align: center;
+    	width: 100%;
+	}
+    header nav ul li {
+		display: block;
+		margin: .4em 0;
+	}
+}
+
+@media only screen and (max-width:470px) {
+	.contenido .art-contenido .lis-info {
+		padding: 2em 0;
+	}
+	.art-slider h1 {
+		margin-top: 100px;
+	}
+
+	.contenido .art-contenido .lis-info .ico {
+		height: 200px;
+	}
+}
+
+/** 460px responsive menu 
+	460 slider margin-top 100px
+**/
